@@ -14,9 +14,19 @@ public function __construct($a, $b, $c){
 
 }
 
+public function __destruct(){
+
+    var_dump("DESTRUCT");
+
 }
 
+public function __toString(){
 
+    return $this->Logradoro.",".$this->numero.",".$this->cidade;
+
+}
+
+}
 
 
 ?>
